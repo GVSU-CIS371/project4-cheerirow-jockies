@@ -19,11 +19,14 @@
       © 2023 My Online Store. All rights reserved.
     </v-footer>
   </v-app>
+
+  <Home />
+
 </template>
 
 <script lang="ts" setup>
 import { ref } from "vue";
-
+import Home from "./components/Home.vue";
 const links = ref([
   { text: "Home", to: "/", icon: "mdi-home" },
   { text: "Electronics", to: "/electronics", icon: "mdi-laptop" },
