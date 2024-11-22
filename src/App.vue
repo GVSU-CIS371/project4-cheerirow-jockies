@@ -23,7 +23,9 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
+import { useRouter } from "vue-router";
+
 const links = ref([
   { text: "Home", to: "/", icon: "mdi-home" },
   { text: "Electronics", to: "/electronics", icon: "mdi-laptop" },
@@ -31,4 +33,10 @@ const links = ref([
   { text: "Groceries", to: "/groceries", icon: "mdi-cart" },
   { text: "Best Seller", to: "/bestseller", icon: "mdi-cash-register" },
 ]);
+
+const router = useRouter();
+
+onMounted(() => {
+  router.push("/");
+});
 </script>
