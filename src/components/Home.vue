@@ -1,6 +1,5 @@
 <template>
   <v-container>
-
     <v-row no-gutters>
       <v-col
         v-for="item in product_arr"
